@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SwiftResponder.Sphere:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SwiftResponder" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nRfn2CxiUXzg7nKJ7q7P8bA5JB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build SwiftResponder.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Launcher [:Launcher:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Sphere [:Sphere:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (3).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftAnalysisFixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt541Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/swiftresponder&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/src/test/resources/nl/bluetrails/swiftresponder&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder" />
+      <recent name="$PROJECT_DIR$/src/test/resources/nl.bluetrails.swiftresponder" />
+      <recent name="$PROJECT_DIR$/src/test/java/nl/bluetrails/swiftresponder" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/Sphere/src/test/java/swiftresponder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder" />
+      <recent name="$PROJECT_DIR$/src/test/resources/org" />
+      <recent name="$PROJECT_DIR$/Sphere/src/test/resources/nl/bluetrails/swiftresponder" />
+      <recent name="$PROJECT_DIR$/Sphere/src/test/resources/swiftresponder" />
+      <recent name="$PROJECT_DIR$/Sphere/src/test/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="nl.bluetrails.swiftresponder" />
+      <recent name="swiftresponder" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nl.bluetrails.swiftresponder" />
+      <recent name="swiftresponder" />
+      <recent name="org.vp" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle buildDependents" />
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.mt541Fixture">
+    <configuration name="SwiftResponder [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="mt540Fixture (3)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nl.bluetrails.swiftresponder.mt540Fixture&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SwiftAnalysisFixture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwiftResponder.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.bluetrails.swiftresponder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.bluetrails.swiftresponder" />
+      <option name="MAIN_CLASS_NAME" value="nl.bluetrails.swiftresponder.SwiftAnalysisFixture" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mt540Fixture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwiftResponder.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.bluetrails.swiftresponder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.bluetrails.swiftresponder" />
+      <option name="MAIN_CLASS_NAME" value="nl.bluetrails.swiftresponder.mt540Fixture" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mt541Fixture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwiftResponder.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.bluetrails.swiftresponder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.bluetrails.swiftresponder" />
+      <option name="MAIN_CLASS_NAME" value="nl.bluetrails.swiftresponder.mt541Fixture" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.mt541Fixture" />
+        <item itemvalue="JUnit.mt540Fixture" />
+        <item itemvalue="JUnit.SwiftAnalysisFixture" />
+        <item itemvalue="Gradle.mt540Fixture (3)" />
+        <item itemvalue="Gradle.SwiftResponder [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="" />
+      <created>1728940974419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728940974419</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/swiftresponder/SwiftResponderTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/main/java/swiftresponder/SwiftMessageTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sphere/src/test/java/nl/bluetrails/swiftresponder/mt540Fixture.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
