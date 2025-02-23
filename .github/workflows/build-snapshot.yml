@@ -1,4 +1,4 @@
-name: Build and Publish Snapshot
+name: Build Snapshot JAR
 
 on:
   push:
@@ -6,22 +6,34 @@ on:
       - main
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        java-version: '16'
-        distribution: 'temurin'
-    
-    - name: Build with Gradle
-      run: ./gradlew build
-    
-    - name: Publish snapshot
-      run: ./gradlew publish
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v4
+      
+      - name: Build with Gradle
+        run: ./gradlew build
+      
+      - name: Get version from build.gradle
+        run: echo "VERSION=$(./gradlew properties -q | grep "version:" | awk '{print $2}')" >> $GITHUB_ENV
+      
+      - name: Create release folder
+        run: mkdir -p releases
+      
+      - name: Copy JAR to releases folder
+        run: cp build/libs/*.jar releases/myapp-${{ env.VERSION }}-SNAPSHOT.jar
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot-jar
+          path: releases/*.jar
