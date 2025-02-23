@@ -10,4 +10,4 @@ and the typeresponse is "ack", "match" or "settle".
 Logically you should ask them sequentially. First ack, then match, then settle. 
 But any answer will be provided when requested. There is no sequence logic built.
 
-code-bike-hike.
+code-bike-hike..
