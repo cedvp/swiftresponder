@@ -1,6 +1,8 @@
 plugins {
     id("java")
+    id 'maven-publish'
 }
+
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
@@ -24,6 +26,14 @@ tasks.test {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(16) // Replace 11 with your desired version
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
     }
 }
 
