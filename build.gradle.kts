@@ -20,3 +20,9 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(16) // Replace 11 with your desired version
+    }
+}
