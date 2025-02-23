@@ -1,6 +1,5 @@
 plugins {
     id("java")
-    id ("maven-publish")
 }
 
 
@@ -29,11 +28,4 @@ java {
     }
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-        }
-    }
-}
 
