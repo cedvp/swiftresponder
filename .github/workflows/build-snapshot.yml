@@ -29,8 +29,11 @@ jobs:
       - name: Create release folder
         run: mkdir -p releases
       
+      - name: make dir
+        run: mkdir -p releasessnapshot
+
       - name: Copy JAR to releases folder
-        run: cp build/libs/*.jar releases/myapp-${{ env.VERSION }}-SNAPSHOT.jar
+        run: find build/libs -name '*.jar' -exec cp {} releasessnapshot/swiftresponder-${{ env.VERSION }}-SNAPSHOT.jar \;
       
       - name: Upload artifact
         uses: actions/upload-artifact@v4
