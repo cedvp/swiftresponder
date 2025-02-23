@@ -9,3 +9,5 @@ where input is a String with the all input message (MT540, MT541, MT542 or MT543
 and the typeresponse is "ack", "match" or "settle".
 Logically you should ask them sequentially. First ack, then match, then settle. 
 But any answer will be provided when requested. There is no sequence logic built.
+
+code-bike-hike.
