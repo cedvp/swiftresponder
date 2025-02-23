@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("org.gradle.toolchains.foojay-resolver-convention") version("0.8.0")
 }
 
 group = "org.example"
@@ -26,3 +27,4 @@ java {
         languageVersion = JavaLanguageVersion.of(16) // Replace 11 with your desired version
     }
 }
+
