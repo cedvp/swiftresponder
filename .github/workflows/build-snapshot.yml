@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Set up JDK
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v4
         with:
           java-version: '11'
           distribution: 'adopt'
@@ -30,7 +30,7 @@ jobs:
         run: cp target/*.jar releases/myapp-${{ env.VERSION }}-SNAPSHOT.jar
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: snapshot-jar
           path: releases/*.jar
