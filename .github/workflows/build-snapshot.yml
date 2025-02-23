@@ -14,7 +14,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '11'
+          java-version: '16'
           distribution: 'temurin'
       
       - name: Setup Gradle
@@ -26,14 +26,8 @@ jobs:
       - name: Get version from build.gradle
         run: echo "VERSION=$(./gradlew properties -q | grep "version:" | awk '{print $2}')" >> $GITHUB_ENV
       
-      - name: Create release folder
-        run: mkdir -p releases
-      
-      - name: Copy JAR to releases folder
-        run: cp build/libs/*.jar releases/myapp-${{ env.VERSION }}-SNAPSHOT.jar
-      
-      - name: Upload artifact
+      - name: Upload snapshot JAR
         uses: actions/upload-artifact@v4
         with:
           name: snapshot-jar
-          path: releases/*.jar
+          path: build/libs/*-${{ env.VERSION }}.jar
