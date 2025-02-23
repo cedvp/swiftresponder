@@ -1,0 +1,36 @@
+name: Build Snapshot JAR
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      
+      - name: Build with Maven
+        run: mvn clean package
+      
+      - name: Get version from pom.xml
+        run: echo "VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
+      
+      - name: Create release folder
+        run: mkdir -p releases
+      
+      - name: Copy JAR to releases folder
+        run: cp target/*.jar releases/myapp-${{ env.VERSION }}-SNAPSHOT.jar
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshot-jar
+          path: releases/*.jar
