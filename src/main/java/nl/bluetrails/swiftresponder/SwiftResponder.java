@@ -21,6 +21,7 @@ public class SwiftResponder {
         SwiftMT swiftMTIncoming = new SwiftMT(rawSwiftMessage);
         String incomingType = rawSwiftMessage.substring(33,36);
         String sender = rawSwiftMessage.substring(6,18);
+        String receiver12 = rawSwiftMessage.substring(36,47);
         HashMap<String,String> messagesVSSettlements = new HashMap<>();
         messagesVSSettlements.put("540","544");
         messagesVSSettlements.put("541","545");
@@ -108,7 +109,7 @@ public class SwiftResponder {
 
 
             //content final answer
-            String headerLine = createHeaderResponse(incomingType,sender,messagesVSSettlements.get(incomingType));
+            String headerLine = createHeaderResponse(incomingType,sender,receiver12, messagesVSSettlements.get(incomingType));
             String responseline=":16R:GENL"+LINEBREAK;
             responseline+=":20C::SEME//CH"+System.currentTimeMillis()+System.lineSeparator().trim()+LINEBREAK;
             responseline+=":23G:NEWM"+LINEBREAK;
@@ -177,8 +178,8 @@ public class SwiftResponder {
             responseline+=":16S:SETDET"+LINEBREAK;
             responseline+="-}";
 
-            responses.put("ack", AutoSettleMT548Preparator.getMT548Response(incomingType,fieldsNeededFromIncoming,false, sender));
-            responses.put("match", AutoSettleMT548Preparator.getMT548Response(incomingType,fieldsNeededFromIncoming,true, sender));
+            responses.put("ack", AutoSettleMT548Preparator.getMT548Response(incomingType,fieldsNeededFromIncoming,false, sender, receiver12));
+            responses.put("match", AutoSettleMT548Preparator.getMT548Response(incomingType,fieldsNeededFromIncoming,true, sender, receiver12));
             responses.put("settle", headerLine+responseline);
             return responses;
         } else {
@@ -187,7 +188,7 @@ public class SwiftResponder {
     }
 
 
-    public static String createHeaderResponse(String incomingType, String sender, String responsetype){
+    public static String createHeaderResponse(String incomingType, String sender, String receiver12, String responsetype){
 
 
             String headerblock1 = "{1:F01";
@@ -197,7 +198,10 @@ public class SwiftResponder {
                 headerblock1+="}";
             String headerblock2 = "{2:O";
                 headerblock2+=responsetype;
-                headerblock2+="0000000000INSECHZ0AXXX0000000000";
+                headerblock2+="0000000000";
+                headerblock2+=receiver12;
+                headerblock2+="0000000000";
+
                 headerblock2+=new SimpleDateFormat("yyMMdd").format(new Date());
                 headerblock2+=new SimpleDateFormat("HHmm").format(new Date());
                 headerblock2+="N}";
@@ -226,9 +230,9 @@ public class SwiftResponder {
 class AutoSettleMT548Preparator {
     static String LINEBREAK = System.lineSeparator();
 
-    public static String getMT548Response(String incomingType, HashMap<String, String> fieldsFromIncoming, boolean isForMatch, String sender) {
+    public static String getMT548Response(String incomingType, HashMap<String, String> fieldsFromIncoming, boolean isForMatch, String sender, String receiver12) {
 
-        String headerLine = SwiftResponder.createHeaderResponse(incomingType,sender,"548").trim();
+        String headerLine = SwiftResponder.createHeaderResponse(incomingType,sender,receiver12, "548").trim();
         String responseline=":16R:GENL"+LINEBREAK;
         responseline+=":20C::SEME//CH"+System.currentTimeMillis()+System.lineSeparator().trim()+LINEBREAK;
         responseline+=":23G:INST"+LINEBREAK;
