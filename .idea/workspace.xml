@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="" />
+    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="Test : clarify messages expected">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/nl.bluetrails.swiftresponder.SwiftAnalysisFixture.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/nl.bluetrails.swiftresponder.SwiftAnalysisFixture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/nl.bluetrails.swiftresponder.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/nl.bluetrails.swiftresponder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/nl/bluetrails/swiftresponder/SwiftAnalysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/nl/bluetrails/swiftresponder/SwiftAnalysis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-nl.bluetrails.swiftresponder.SwiftAnalysisFixture.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-nl.bluetrails.swiftresponder.SwiftAnalysisFixture.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/MissingTagException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/MissingTagException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftMT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftMT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftTag.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +273,20 @@
       <option name="presentableId" value="Default" />
       <updated>1728940974419</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test : clarify messages expected">
+      <option name="closed" value="true" />
+      <created>1741674210311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674210311</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test : clarify messages expected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test : clarify messages expected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
