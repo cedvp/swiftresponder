@@ -9,52 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/AutoSettleMT548Preparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/AutoSettleMT548Preparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/MissingTagException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/MissingTagException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftHeader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftHeader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftMT.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftMT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftResponder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftResponder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nl/bluetrails/swiftresponder/SwiftTag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/SwiftAnalysisFixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/SwiftAnalysisFixture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt540Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt540Fixture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt541Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt541Fixture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt542Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt542Fixture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt543Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nl/bluetrails/swiftresponder/mt543Fixture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Gradle#20Test#20Executor#207.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/nl/bluetrails/swiftresponder/mt540.md" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/nl/bluetrails/swiftresponder/mt540.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Gradle#20Test#20Executor#207.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AutoSettleMT548Preparator.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AutoSettleMT548Preparator.class.uniqueId1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SwiftResponder.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SwiftResponder.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/SwiftAnalysisFixture.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/mt540Fixture.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/mt541Fixture.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/mt542Fixture.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/mt543Fixture.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bluetrails/swiftresponder/SwiftResponder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder/mt540.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder/mt540.md" afterDir="false" />
-    </list>
+    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +55,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cedvp&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cedvp/swiftresponder.git&quot;,
+    &quot;accountId&quot;: &quot;2405ef76-ca20-4789-a940-07c8e04fe42b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -108,41 +75,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build SwiftResponder.executor": "Run",
-    "Gradle.SwiftAnalysisFixture.executor": "Run",
-    "Gradle.SwiftMessageTest (1).executor": "Run",
-    "Gradle.SwiftMessageTest.executor": "Run",
-    "Gradle.SwiftResponder [:Main.main()].executor": "Run",
-    "Gradle.SwiftResponder [buildDependents].executor": "Run",
-    "Gradle.SwiftResponder [build].executor": "Run",
-    "Gradle.SwiftResponder:Launcher [:Launcher:Main.main()].executor": "Run",
-    "Gradle.SwiftResponder:Sphere [:Sphere:Main.main()].executor": "Run",
-    "Gradle.SwiftResponderTest (1).executor": "Run",
-    "Gradle.SwiftResponderTest.executor": "Run",
-    "Gradle.SwiftTagTest (1).executor": "Run",
-    "Gradle.SwiftTagTest.executor": "Run",
-    "Gradle.mt540Fixture (1).executor": "Run",
-    "Gradle.mt540Fixture (2).executor": "Run",
-    "Gradle.mt540Fixture (3).executor": "Run",
-    "Gradle.mt540Fixture.executor": "Run",
-    "JUnit.SwiftAnalysisFixture.executor": "Run",
-    "JUnit.SwiftMessageTest.executor": "Run",
-    "JUnit.mt540Fixture.executor": "Run",
-    "JUnit.mt541Fixture.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/swiftresponder",
-    "last_opened_file_path": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/src/test/resources/nl/bluetrails/swiftresponder",
-    "onboarding.tips.debug.path": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build SwiftResponder.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftAnalysisFixture.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Launcher [:Launcher:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Sphere [:Sphere:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (3).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftAnalysisFixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt541Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/swiftresponder&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/src/test/resources/nl/bluetrails/swiftresponder&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder" />
