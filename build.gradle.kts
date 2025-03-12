@@ -1,9 +1,12 @@
+
+
 plugins {
     id("java")
-        id("maven-publish")
-             id("java-library")
+    id("java-library")
+    id("maven-publish")
     id("signing")
 }
+
 
 
 
@@ -19,6 +22,7 @@ dependencies {
     testImplementation("org.concordion:concordion:4.0.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    implementation("org.bouncycastle:bcpg-jdk15on:1.70")
 }
 
 tasks.test {
@@ -39,8 +43,8 @@ publishing {
 
             // Add metadata for Maven Central
             groupId = "nl.bluetrails" // Replace with your groupId
-            artifactId = "swift-responder" // Replace with your artifactId
-            version = "1.0.0" // Replace with your version
+            artifactId = "swiftresponder" // Replace with your artifactId
+            version = "1.0.0-SNAPSHOT" // Replace with your version
 
             pom {
                 name.set("Swift Responder")
@@ -53,17 +57,17 @@ publishing {
                         url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
                     }
                 }
+                scm {
+                    connection.set("scm:git:git://github.com/cedvp/SwiftResponder.git") // Replace
+                    developerConnection.set("scm:git:ssh://git@github.com/cedvp/SwiftResponder.git") // Replace
+                    url.set("https://github.com/cedvp/swiftresponder") // Replace
+                }
                 developers {
                     developer {
-                        id.set("your-id")
-                        name.set("Your Name")
-                        email.set("your-email@example.com")
+                        id.set("cedvp")
+                        name.set("Cedric Van Pelt")
+                        email.set("cedric@bluetrails.nl")
                     }
-                }
-                scm {
-                    connection.set("scm:git:git://github.com/username/repository.git")
-                    developerConnection.set("scm:git:ssh://git@github.com/username/repository.git")
-                    url.set("https://github.com/username/repository")
                 }
             }
         }
@@ -72,20 +76,21 @@ publishing {
     repositories {
         maven {
             name = "OSSRH"
-            url = uri("https://oss.sonatype.org/service/local/staging/deploy/maven2/")
+            val releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            val snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+            url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
             credentials {
-                username = System.getenv("MAVEN_USERNAME") // OSSRH username
-                password = System.getenv("MAVEN_PASSWORD") // OSSRH password
-            }
+                username = project.findProperty("mavenUsername") as String? ?: System.getenv("MAVEN_USERNAME")
+                password = project.findProperty("mavenPassword") as String? ?: System.getenv("MAVEN_PASSWORD")            }
         }
     }
 }
 
+
+
+
+
 signing {
-    useInMemoryPgpKeys(
-        System.getenv("GPG_PRIVATE_KEY"),
-        System.getenv("GPG_PASSPHRASE")
-    )
+    useGpgCmd()
     sign(publishing.publications["mavenJava"])
 }
-
