@@ -1,6 +1,7 @@
 
 
 plugins {
+
     id("java")
     id("java-library")
     id("maven-publish")
@@ -8,6 +9,15 @@ plugins {
 }
 
 
+
+group = "nl.bluetrails" // Replace with your group ID
+version = "1.0.0" // or whatever version you're using
+
+tasks.register<Jar>("SwiftResponderJar") {
+    from(sourceSets.main.get().output)
+    archiveBaseName.set("my-library")
+    archiveClassifier.set("")
+}
 
 
 repositories {
@@ -30,21 +40,39 @@ tasks.test {
 }
 
 java {
+    withSourcesJar()
+    withJavadocJar()
     toolchain {
         languageVersion = JavaLanguageVersion.of(16) // Replace 11 with your desired version
     }
 }
 
+repositories {
+    mavenCentral() // Or jcenter() if you're using it
+
+    maven {
+        name = "OSSRH"
+        url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+        credentials {
+            username = project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME")
+            password = project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD")
+        }
+    }
+}
 
 publishing {
     publications {
+
+
+
         create<MavenPublication>("mavenJava") {
             from(components["java"])
+
 
             // Add metadata for Maven Central
             groupId = "nl.bluetrails" // Replace with your groupId
             artifactId = "swiftresponder" // Replace with your artifactId
-            version = "1.0.0-SNAPSHOT" // Replace with your version
+            version = "1.0.0" // Replace with your version
 
             pom {
                 name.set("Swift Responder")
@@ -69,28 +97,32 @@ publishing {
                         email.set("cedric@bluetrails.nl")
                     }
                 }
-            }
+
         }
     }
+        repositories {
+            maven {
+                name = "OSSRH"
+                val snapshoturl = "https://central.sonatype.com/repository/maven-snapshots/"
+                val releaseurl = "https://central.sonatype.org/service/local/staging/deploy/maven2/"
+                url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshoturl else releaseurl)
+                credentials {
 
-    repositories {
-        maven {
-            name = "OSSRH"
-            val releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-            val snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-            url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
-            credentials {
-                username = project.findProperty("mavenUsername") as String? ?: System.getenv("MAVEN_USERNAME")
-                password = project.findProperty("mavenPassword") as String? ?: System.getenv("MAVEN_PASSWORD")            }
+                    username = project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME")
+                    password = project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD")
+
+
+                }
+            }
         }
     }
 }
 
+println("user="+project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME"))
 
-
+println("password="+project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD"))
 
 
 signing {
-    useGpgCmd()
     sign(publishing.publications["mavenJava"])
 }
