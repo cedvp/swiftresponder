@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "nl.bluetrails",
+    "module": "swiftresponder",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "swiftresponder-1.0.1.jar",
+          "url": "swiftresponder-1.0.1.jar",
+          "size": 12132,
+          "sha512": "0e7892d87326714be1add9c3b87fb63e805e3173c897cc79ac4b0c7358fa9165f1f8ae644958a627d415971dc0f621d934d55f7c4c5d72805d96f40ee42b4fd9",
+          "sha256": "0b17c92bd1db195374bb24ae911272fd10a573b40a438458154f60cf9340ce23",
+          "sha1": "fc7ef1abe2f972b2b93c7cb5c25ad03989ede16a",
+          "md5": "ec201dff8bafdfae179f2bdba8ce5300"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.bouncycastle",
+          "module": "bcpg-jdk15on",
+          "version": {
+            "requires": "1.70"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "swiftresponder-1.0.1.jar",
+          "url": "swiftresponder-1.0.1.jar",
+          "size": 12132,
+          "sha512": "0e7892d87326714be1add9c3b87fb63e805e3173c897cc79ac4b0c7358fa9165f1f8ae644958a627d415971dc0f621d934d55f7c4c5d72805d96f40ee42b4fd9",
+          "sha256": "0b17c92bd1db195374bb24ae911272fd10a573b40a438458154f60cf9340ce23",
+          "sha1": "fc7ef1abe2f972b2b93c7cb5c25ad03989ede16a",
+          "md5": "ec201dff8bafdfae179f2bdba8ce5300"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "swiftresponder-1.0.1-sources.jar",
+          "url": "swiftresponder-1.0.1-sources.jar",
+          "size": 7384,
+          "sha512": "af015d1c87334c6d83a712c210d175d02943a36d1423d1f20be19d21d537f5efec14ed63f16e2e0c16c66589ff8c1a2d5fc683c5e325902af6c7628208bb1af3",
+          "sha256": "3517e8f87dd0033c93ffda992fad369764ae45c00332f001c326d2ff3edb6e47",
+          "sha1": "b57f3a07aa75ffeeba2f0a021b178978441a2d5b",
+          "md5": "67ae53feba87b59b3de1f9dd9f24e974"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "swiftresponder-1.0.1-javadoc.jar",
+          "url": "swiftresponder-1.0.1-javadoc.jar",
+          "size": 119830,
+          "sha512": "975fa37662aebda38d6ff3dcd4c9dc308a56b1cc55fe90399702e17d562f613f4782889ca5de8f3d2dda46781da36fd289e4c9b779e054bcb2e47fb82359de32",
+          "sha256": "955b817a9480583a3899a039afc4ffdc69fef908c8999169f5816596a81eea9a",
+          "sha1": "f6f229c0cb243c00f6addb0d88e32a52fe2d60b9",
+          "md5": "aa0bdd19bc581590b1db85aa009d5074"
+        }
+      ]
+    }
+  ]
+}

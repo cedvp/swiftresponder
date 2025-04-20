@@ -1,4 +1,4 @@
-rootProject.name = "SwiftResponder"
+rootProject.name = "swiftresponder"
 include("Launcher")
 include("Sphere")
 

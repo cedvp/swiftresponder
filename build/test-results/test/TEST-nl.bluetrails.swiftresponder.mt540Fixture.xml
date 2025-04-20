@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.bluetrails.swiftresponder.mt540" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-01T03:59:42" hostname="Cedrics-MacBook-Air.local" time="0.0">
+  <properties/>
+  <testcase name="[Concordion Specification for 'mt540']" classname="nl.bluetrails.swiftresponder.mt540Fixture" time="0.0"/>
+  <system-out><![CDATA[
+file:///var/folders/6z/54qc6y6j3bsgvrzlzck_q4rc0000gn/T/concordion/nl/bluetrails/swiftresponder/mt540.html
+Successes: 142, Failures: 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.bluetrails.swiftresponder.SwiftAnalysis" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-11T22:20:28" hostname="Cedrics-MacBook-Air.local" time="0.326">
+<testsuite name="nl.bluetrails.swiftresponder.SwiftAnalysis" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-01T03:59:41" hostname="Cedrics-MacBook-Air.local" time="0.19">
   <properties/>
-  <testcase name="[Concordion Specification for 'SwiftAnalysis']" classname="nl.bluetrails.swiftresponder.SwiftAnalysisFixture" time="0.326"/>
+  <testcase name="[Concordion Specification for 'SwiftAnalysis']" classname="nl.bluetrails.swiftresponder.SwiftAnalysisFixture" time="0.19"/>
   <system-out><![CDATA[bl
 bl
 bl
