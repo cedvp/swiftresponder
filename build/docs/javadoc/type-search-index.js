@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"nl.bluetrails.swiftresponder","l":"MissingTagException"},{"p":"nl.bluetrails.swiftresponder","l":"SwiftHeader"},{"p":"nl.bluetrails.swiftresponder","l":"SwiftMT"},{"p":"nl.bluetrails.swiftresponder","l":"SwiftResponder"},{"p":"nl.bluetrails.swiftresponder","l":"SwiftTag"}];updateSearchResults();
