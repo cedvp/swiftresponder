@@ -49,110 +49,8 @@ java {
     }
 }
 
-repositories {
-    mavenCentral() // Or jcenter() if you're using it
-
-    maven {
-        name = "OSSRH"
-        url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
-        credentials {
-            username = project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME")
-            password = project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD")
-        }
-    }
-}
-
-publishing {
-    publications {
 
 
-
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-
-
-            // Add metadata for Maven Central
-            groupId = "nl.bluetrails" // Replace with your groupId
-            artifactId = "swiftresponder" // Replace with your artifactId
-            version = "1.0.1" // Replace with your version
-
-            pom {
-                name.set("Swift Responder")
-                description.set("Get Swift Mocked answers")
-                url.set("https://github.com/cedvp/swiftresponder")
-
-                licenses {
-                    license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                    }
-                }
-                scm {
-                    connection.set("scm:git:git://github.com/cedvp/SwiftResponder.git") // Replace
-                    developerConnection.set("scm:git:ssh://git@github.com/cedvp/SwiftResponder.git") // Replace
-                    url.set("https://github.com/cedvp/swiftresponder") // Replace
-                }
-                developers {
-                    developer {
-                        id.set("cedvp")
-                        name.set("Cedric Van Pelt")
-                        email.set("cedric@bluetrails.nl")
-                    }
-                }
-
-        }
-    }
-        repositories {
-            maven {
-                name = "OSSRH"
-                val snapshoturl = "https://central.sonatype.com/repository/maven-snapshots/"
-                val releaseurl = "https://central.sonatype.org/service/local/staging/deploy/maven2/"
-                url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshoturl else snapshoturl)
-                credentials {
-
-                    username = project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME")
-                    password = project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD")
-
-
-                }
-            }
-        }
-    }
-}
-
-println("user="+project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME"))
-
-println("password="+project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD"))
-tasks.register<Zip>("zipJarsAndSha") {
-    archiveFileName.set("jars-and-sha.zip")
-    destinationDirectory.set(layout.buildDirectory.dir("distributions"))
-
-    from(layout.buildDirectory.dir("libs")) {
-        include("*.jar")
-        include("*.jar.sha256")
-        include("*.md5")
-        include("*.sha1")
-        include("*.sha512")
-        include("*.asc")
-        include("*.pom")
-    }
-}
-
-signing {
-    sign(publishing.publications["mavenJava"])
-}
-
-
-nexusPublishing {
-    repositories {
-        sonatype {  //only for users registered in Sonatype after 24 Feb 2021
-            nexusUrl.set(uri("https://central.sonatype.org/service/local/"))
-            snapshotRepositoryUrl.set(uri("https://central.sonatype.com/repository/maven-snapshots/"))
-            username = project.property("ossrhUsername") as? String ?: System.getenv("OSSRH_USERNAME")
-            password = project.property("ossrhPassword") as? String ?: System.getenv("OSSRH_PASSWORD")
-        }
-    }
-}
 
 tasks.register<Zip>("bundleRelease") {
     archiveFileName.set("${project.name}-${project.version}-release-bundle.zip")
@@ -188,24 +86,6 @@ tasks.register<Zip>("bundleRelease") {
             into(bundleDir)
         }
 
-        // Generate SHA1, SHA256, and SHA512 checksums for each file in the bundle directory
-        bundleDir.listFiles()?.forEach { file ->
-            if (!file.isDirectory && !file.name.endsWith(".asc")) {
-                listOf("SHA-1", "SHA-256", "SHA-512").forEach { algorithm ->
-                    val checksumFile = File(file.parentFile, "${file.name}.${algorithm.toLowerCase().replace("-", "")}")
-                    ant.withGroovyBuilder {
-                        "checksum"(
-                            "file" to file,
-                            "algorithm" to algorithm,
-                            "property" to "checksumValue"
-                        )
-                    }
-                    checksumFile.writeText(ant.properties["checksumValue"] as String)
-                }
-            }
-        }
-
-        println("Checksums generated for files in: ${bundleDir.absolutePath}")
     }
 }
 

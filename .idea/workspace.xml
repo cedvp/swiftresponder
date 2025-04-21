@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="add pom" />
+    <list default="true" id="7d1868ad-7345-4ba2-93f2-189983a5038b" name="Changes" comment="add pom">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/swiftresponder-1.0.1-release-bundle.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/swiftresponder-1.0.1/swiftresponder-1.0.1-release-bundle.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/swiftresponder-1.0.1/swiftresponder-1.0.1-release-bundle.zip.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/swiftresponder-1.0.1/swiftresponder-1.0.1-release-bundle.zip.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/swiftresponder-1.0.1/swiftresponder-1.0.1-release-bundle.zip.sha512" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,41 +77,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build SwiftResponder.executor": "Run",
-    "Gradle.SwiftAnalysisFixture.executor": "Run",
-    "Gradle.SwiftMessageTest (1).executor": "Run",
-    "Gradle.SwiftMessageTest.executor": "Run",
-    "Gradle.SwiftResponder [:Main.main()].executor": "Run",
-    "Gradle.SwiftResponder [buildDependents].executor": "Run",
-    "Gradle.SwiftResponder [build].executor": "Run",
-    "Gradle.SwiftResponder:Launcher [:Launcher:Main.main()].executor": "Run",
-    "Gradle.SwiftResponder:Sphere [:Sphere:Main.main()].executor": "Run",
-    "Gradle.SwiftResponderTest (1).executor": "Run",
-    "Gradle.SwiftResponderTest.executor": "Run",
-    "Gradle.SwiftTagTest (1).executor": "Run",
-    "Gradle.SwiftTagTest.executor": "Run",
-    "Gradle.mt540Fixture (1).executor": "Run",
-    "Gradle.mt540Fixture (2).executor": "Run",
-    "Gradle.mt540Fixture (3).executor": "Run",
-    "Gradle.mt540Fixture.executor": "Run",
-    "JUnit.SwiftAnalysisFixture.executor": "Run",
-    "JUnit.SwiftMessageTest.executor": "Run",
-    "JUnit.mt540Fixture.executor": "Run",
-    "JUnit.mt541Fixture.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "testbranch1",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/swiftresponder",
-    "last_opened_file_path": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/src/test/resources/nl/bluetrails/swiftresponder",
-    "onboarding.tips.debug.path": "/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build SwiftResponder.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftAnalysisFixture.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Launcher [:Launcher:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponder:Sphere [:Sphere:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftResponderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SwiftTagTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture (3).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftAnalysisFixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwiftMessageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt540Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.mt541Fixture.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;testbranch1&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/swiftresponder&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/src/test/resources/nl/bluetrails/swiftresponder&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/cedricvanpelt/IdeaProjects/SwiftResponder/Sphere/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/nl/bluetrails/swiftresponder" />
