@@ -7,6 +7,67 @@
   <version>1.0-SNAPSHOT</version>
   <name>swiftresponder</name>
   <url>http://maven.apache.org</url>
+
+
+  <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>cedvp</id>
+            <name>Cedric Van Pelt</name>
+            <email>cedric@bluetrails.nl</email>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://github.com/cedvp/swiftresponder</url>
+        <connection>scm:git:git://github.com/cedvp/swiftresponder/repository.git</connection>
+        <developerConnection>scm:git:ssh://github.com/cedvp/swiftresponder/repository.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+    <repository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+
+<settings>
+    <servers>
+        <server>
+            <id>ossrh</id>
+            <username>your-username</username>
+            <password>your-password</password>
+        </server>
+    </servers>
+</settings>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+                <execution>
+                    <id>sign-artifacts</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>sign</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
   
 <dependencies>
     <!-- JUnit Platform BOM -->
