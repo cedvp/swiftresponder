@@ -40,15 +40,7 @@
     </snapshotRepository>
 </distributionManagement>
 
-<settings>
-    <servers>
-        <server>
-            <id>ossrh</id>
-            <username>your-username</username>
-            <password>your-password</password>
-        </server>
-    </servers>
-</settings>
+
 
 <build>
     <plugins>
