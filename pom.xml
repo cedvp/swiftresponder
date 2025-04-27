@@ -4,7 +4,8 @@
   <groupId>nl.bluetrails.swiftresponder</groupId>
   <artifactId>swiftresponder</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
+  <description>SwiftResponder: producing Swift MT messages responses (ack, match, settle) to Security and Cash Swift MT settlements (MT540, MT541, MT542, MT543) for test purposes.</description>
   <name>swiftresponder</name>
   <url>http://maven.apache.org</url>
 
@@ -28,17 +29,6 @@
         <connection>scm:git:git://github.com/cedvp/swiftresponder/repository.git</connection>
         <developerConnection>scm:git:ssh://github.com/cedvp/swiftresponder/repository.git</developerConnection>
     </scm>
-<distributionManagement>
-  <snapshotRepository>
-    <id>ossrh</id>
-    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-  </snapshotRepository>
-  <repository>
-    <id>ossrh</id>
-    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-  </repository>
-</distributionManagement>
-
 
 
 <build>
@@ -56,6 +46,12 @@
                     </goals>
                 </execution>
             </executions>
+            <configuration>
+                <!-- Specify the key to use (optional if you have a default key) -->
+                <gpgKeyname>F50BA1C2</gpgKeyname>
+                <!-- Use a passphrase if your GPG key is password-protected -->
+                <gpgPassphrase>${env.GPG_PASSPHRASE}</gpgPassphrase>
+            </configuration>
         </plugin>
                 <plugin>
           <groupId>org.sonatype.central</groupId>
@@ -63,8 +59,9 @@
           <version>0.7.0</version>
           <extensions>true</extensions>
           <configuration>
-            <publishingServerId>central</publishingServerId>
+            <publishingServerId>ossrh</publishingServerId>
             <autoPublish>true</autoPublish>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
         </plugin>
          <plugin>
@@ -93,6 +90,45 @@
         </execution>
       </executions>
     </plugin>
+    <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-deploy-plugin</artifactId>
+    <version>3.0.0</version>
+</plugin>
+<plugin>
+    <groupId>net.nicoulaj.maven.plugins</groupId>
+    <artifactId>checksum-maven-plugin</artifactId>
+    <version>1.6</version>
+    <executions>
+        <execution>
+            <phase>verify</phase>
+            <goals>
+                <goal>files</goal>
+            </goals>
+            <configuration>
+                <fileSets>
+                    <fileSet>
+                        <directory>${project.build.directory}</directory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                    </fileSet>
+                </fileSets>
+                <algorithms>
+                    <algorithm>SHA-256</algorithm>
+                </algorithms>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>16</source>
+                <target>16</target>
+            </configuration>
+        </plugin>
     </plugins>
 </build>
   
@@ -149,6 +185,17 @@
         </dependency>
     </dependencies>
 </dependencyManagement>
+
+<distributionManagement>
+  <snapshotRepository>
+    <id>ossrh</id>
+    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+    <id>ossrh</id>
+    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+  </repository>
+</distributionManagement>
 
 </project>
 
