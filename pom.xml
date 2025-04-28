@@ -4,7 +4,7 @@
   <groupId>nl.bluetrails.swiftresponder</groupId>
   <artifactId>swiftresponder</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>SwiftResponder: producing Swift MT messages responses (ack, match, settle) to Security and Cash Swift MT settlements (MT540, MT541, MT542, MT543) for test purposes.</description>
   <name>swiftresponder</name>
   <url>http://maven.apache.org</url>
