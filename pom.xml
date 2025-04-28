@@ -48,7 +48,7 @@
             </executions>
             <configuration>
                 <!-- Specify the key to use (optional if you have a default key) -->
-                <gpgKeyname>F50BA1C2</gpgKeyname>
+                <gpgKeyname>${env.GPG_KEYID}</gpgKeyname>
                 <!-- Use a passphrase if your GPG key is password-protected -->
                 <gpgPassphrase>${env.GPG_PASSPHRASE}</gpgPassphrase>
             </configuration>
@@ -133,14 +133,7 @@
 </build>
   
 <dependencies>
-    <!-- JUnit Platform BOM -->
-    <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>5.10.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-    </dependency>
+
 
     <!-- JUnit Jupiter -->
     <dependency>
